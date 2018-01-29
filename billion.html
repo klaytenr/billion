@@ -1,0 +1,17 @@
+<script>
+    function billion(){
+        var sum=.01;
+        var money=.01;
+        for(var x=2; x<=30; x++){
+            money*=2;
+            sum+=money;
+            if(sum>=10000 && sum<15000){
+                console.log("He made $10,000 on day " + x);
+            }
+        }
+        console.log(sum);
+        console.log("On day 30 he would be given " + money + " dollars!")
+    }
+
+    billion();
+</script>
